@@ -22,8 +22,8 @@ app.use('/peer-education', peerEducationRoutes);
 app.use('/disease-prevention', diseasePrevention);
 app.use('/sympton-checker', symptonCheckerRoutes);
 app.use('/user-account', userAccountRoutes);
-app.use('/online-booking', onlineBookingRoutes);
-gi
+app.use('/online-', onlineBookingRoutes);
+
 // Home route
 app.get('/', (req, res) => {
     res.render('index');
