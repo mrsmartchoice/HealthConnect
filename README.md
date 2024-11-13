@@ -46,7 +46,7 @@ Each feature of this platform is designed to promote accessible healthcare and c
 | Name                | Role                     | Contribution               |
 |---------------------|--------------------------|-----------------------------|
 | **Ahmad Abubakar Dandare**     | Developer                | Implementing front and backend functionality |
-| **Juliet IJoma Josept** | Product Manager        | Defining project requirements and strategy |
+| **Juliet IJeoma Joseph** | Product Manager        | Defining project requirements and strategy |
 | **Benidict Chika** | UI/UX Designer          | Creating user-friendly designs and layouts |
 
 ---
