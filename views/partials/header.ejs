@@ -12,35 +12,62 @@
   <link rel="stylesheet" href="/css/style.css">
   <title>HealthConnect</title>
 </head>
-<header>
-  <nav class="navbar navbar-expand-custom navbar-mainbg">
-    <a class="navbar-brand navbar-logo" href="#">HealthConnect</a>
-    <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <i class="fas fa-bars text-white"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <div class="hori-selector">
-          <div class="left"></div>
 
-        </div>
+<body>
 
-        <li class="nav-item">
-          <a class="nav-link" href="/"></i>Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/health-resources">Health Resources</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/mental-health">Mental Health</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#mental-health">Mental Health</a>
-        </li>
+  <header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Brand with Logo -->
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <img src="images/Logo .svg" alt="HealthConnect Logo" width="30" height="30" class="mr-2">
+        HealthConnect
+      </a>
+      <!-- Toggler button for mobile -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        
+      </button>
 
-      </ul>
-    </div>
-  </nav>
-</header>
-<main class="hero-section">
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#mental-health">Mental Health</a>
+              <a class="dropdown-item" href="#disease-prevention">Disease Prevention</a>
+              <a class="dropdown-item" href="#symptom-checker">Symptom Checker</a>
+              <a class="dropdown-item" href="#online-booking">Online Booking</a>
+              <a class="dropdown-item" href="#peer-education">Peer Education</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+
+          <!-- User Profile Icon (Boxicons) -->
+          <li class="nav-item">
+            <a class="nav-link" href="/profile">
+              <i class="bx bx-user-circle" style="font-size: 1.5em;"></i> <!-- Adjust the size as needed -->
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main content area -->
+  <main class="hero-section">
+    <!-- Your content goes here -->
+ 
+  
