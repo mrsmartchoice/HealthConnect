@@ -23,7 +23,7 @@ This platform is created as part of the **3MTT Hackathon** to provide essential 
 ## 🛠️ Tech Stack
 Our tech stack combines frontend and backend technologies for a seamless experience:
 
-- **Frontend**: HTML, CSS, JavaScript
+- **Frontend**: HTML, CSS, JavaScript (Boostrap)
 - **Backend**: Node.js, Express, EJS, APIs
 - **Storage**: LocalStorage (Database integration planned for future releases)
 
@@ -46,7 +46,7 @@ Each feature of this platform is designed to promote accessible healthcare and c
 | Name                | Role                     | Contribution               |
 |---------------------|--------------------------|-----------------------------|
 | **Ahmad Abubakar Dandare**     | Developer                | Implementing front and backend functionality |
-| **Juliet IJoma Josept** | Product Manager        | Defining project requirements and strategy |
+| **Juliet IJeoma Joseph** | Product Manager        | Defining project requirements and strategy |
 | **Benidict Chika** | UI/UX Designer          | Creating user-friendly designs and layouts |
 
 ---
