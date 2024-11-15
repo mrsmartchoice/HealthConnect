@@ -70,7 +70,7 @@ We plan to add more functionalities, including:
 ---
 
 ## 📸 Screenshots
-![Home Page](link_to_homepage_screenshot.png)
+![Home Page](public/images/healthConnect.png)
 ![Health Resources](link_to_health_resources_screenshot.png)
 
 ---
