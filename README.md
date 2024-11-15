@@ -23,7 +23,7 @@ This platform is created as part of the **3MTT Hackathon** to provide essential 
 ## 🛠️ Tech Stack
 Our tech stack combines frontend and backend technologies for a seamless experience:
 
-- **Frontend**: HTML, CSS, JavaScript
+- **Frontend**: HTML, CSS, JavaScript (Boostrap)
 - **Backend**: Node.js, Express, EJS, APIs
 - **Storage**: LocalStorage (Database integration planned for future releases)
 
@@ -70,7 +70,7 @@ We plan to add more functionalities, including:
 ---
 
 ## 📸 Screenshots
-![Home Page](link_to_homepage_screenshot.png)
+![Home Page](public/images/healthConnect.png)
 ![Health Resources](link_to_health_resources_screenshot.png)
 
 ---
