@@ -1,85 +1,113 @@
 <%- include("partials/header.ejs") %>
 
-  <!-- Hero Section -->
-  <div class="hero-section">
-    <!-- Herotext Div (Left Side) -->
-    <div class="herotext">
-      <h1>Welcome to Our Healthcare Platform</h1>
-      <p>Explore health resources, services, and ways to stay healthy. Register now to get started!</p>
-      <button class="register-btn">Register</button>
-    </div>
-
-    <!-- Heroimage Div (Right Side) -->
-    <div class="heroimage">
-      <img src="images/doctor.png" alt="Healthcare Image">
-    </div>
-
-    <!-- Search Section (Centered Below Hero Text and Image) -->
-    <div class="search-section">
-      <div class="search-input">
-        <i class="bx bx-search search-icon"></i>
-        <input type="text" placeholder="Search for Health Resources...">
-      </div>
-      <div class="location-input">
-        <i class="bx bx-map location-icon"></i>
-        <input type="text" placeholder="Location...">
-      </div>
-    </div>
+  <!-- Herotext Div (Left Side) -->
+  <div class="herotext">
+    <h1>Welcome to Our Healthcare Platform</h1>
+    <p>Explore health resources, services, and ways to stay healthy. Register now to get started!</p>
+    <button class="register-btn">Register</button>
   </div>
 
-  <!-- Advanced Features Section -->
-  <div class="advanced-features">
-    <!-- First 4 sections arranged in 2 rows, 2 columns -->
-    <div class="feature-row">
-      <section class="feature" id="health-resources">
-        <h2>Find Health Resources</h2>
-        <p>Explore clinics, pharmacies, and telemedicine options for easy access to healthcare.</p>
-        <button class="feature-btn" onclick="window.location.href='/health-resources'">Get Started</button>
-      </section>
+  <!-- Heroimage Div (Right Side) -->
+  <div class="heroimage">
+    <img src="/images/doctor.png" alt="Healthcare Image" width="580">
+  </div>
 
-      <section class="feature" id="mental-health">
-        <h2>Mental Health Support</h2>
-        <p>Access resources and tools to support your mental well-being, including counseling and therapy services.</p>
-        <button class="feature-btn" onclick="window.location.href='/mental-health'">Get Started</button>
-      </section>
+  <!-- Search Section -->
+  <div class="search-section">
+    <div class="search-input">
+      <i class="bx bx-search search-icon"></i>
+      <input type="text" placeholder="Search Health Resources...">
     </div>
-
-    <div class="feature-row">
-      <section class="feature" id="disease-prevention">
-        <h2>Disease Prevention Tips</h2>
-        <p>Learn how to prevent common diseases and understand vaccination schedules.</p>
-        <button class="feature-btn" onclick="window.location.href='/disease-prevention'">Learn More</button>
-      </section>
-
-      <section class="feature" id="symptom-checker">
-        <h2>Symptom Checker</h2>
-        <p>Check your symptoms and get advice on whether you need medical attention or self-care.</p>
-        <button class="feature-btn" onclick="window.location.href='/symptom-checker'">Check Now</button>
-      </section>
-    </div>
-
-    <!-- Remaining sections appear below in a single row and centered as specified -->
-    <div class="feature-row">
-      <section class="feature" id="online-booking">
-        <h2>Book Appointments Online</h2>
-        <p>Quickly schedule appointments with healthcare professionals and get reminders for your visits.</p>
-        <button class="feature-btn" onclick="window.location.href='/online-booking'">Book Now</button>
-      </section>
-
-      <section class="feature" id="peer-education">
-        <h2>Community Health Educators</h2>
-        <p>Empower community members to become health educators, sharing critical health knowledge with others.</p>
-        <button class="feature-btn" onclick="window.location.href='/peer-education'">Get Involved</button>
-      </section>
-    </div>
-
-    <div class="feature-row centered">
-      <section class="feature" id="user-account">
-        <h2>Register and Login</h2>
-        <p>Create your account to access personalized health resources, appointments, and community features.</p>
-        <button class="feature-btn" onclick="window.location.href='/user-account'">Sign Up</button>
-      </section>
+    <div class="location-input">
+      <i class="bx bx-map location-icon"></i>
+      <input type="text" placeholder="Location...">
     </div>
   </div>
+</main>
+  
+<!-- Advanced Features Section -->
+<div class="advanced-features">
+  <!-- Feature Row 1 (Left Image) -->
+  <div class="feature-row" id="health-resources">
+    <section class="feature">
+      <h2>Find Health Resources</h2>
+      <p>Explore a wide range of clinics, pharmacies, and telemedicine options for easy access to healthcare.</p>
+      <button class="feature-btn" onclick="window.location.href='/health-resources'">Get Started</button>
+    </section>
+    <section class="feature-img">
+      <img src="/images/health-resources.png" alt="Health Resources" class="feature-img-card">
+    </section>
+  </div>
+
+  <!-- Feature Row 2 (Mental Health) -->
+  <div class="feature-row reverse" id="mental-health">
+    <section class="feature-img">
+      <img src="/images/mental-health.png" alt="Mental Health" class="feature-img-card">
+    </section>
+    <section class="feature">
+      <h2>Mental Health Support</h2>
+      <p>Access resources and tools to support your mental well-being, including counseling and therapy services.</p>
+      <button class="feature-btn" onclick="window.location.href='/mental-health'">Get Started</button>
+    </section>
+  </div>
+
+  <!-- Feature Row 3 (Disease Prevention) -->
+  <div class="feature-row" id="disease-prevention">
+    <section class="feature">
+      <h2>Disease Prevention Tips</h2>
+      <p>Learn how to prevent common diseases, understand vaccination schedules, and take proactive measures.</p>
+      <button class="feature-btn" onclick="window.location.href='/disease-prevention'">Learn More</button>
+    </section>
+    <section class="feature-img">
+      <img src="/images/disease-prevention.png" alt="Disease Prevention" class="feature-img-card">
+    </section>
+  </div>
+
+  <!-- Feature Row 4 (Symptom Checker) -->
+  <div class="feature-row reverse" id="symptom-checker">
+    <section class="feature-img">
+      <img src="/images/symptom-checker.png" alt="Symptom Checker" class="feature-img-card">
+    </section>
+    <section class="feature">
+      <h2>Symptom Checker</h2>
+      <p>Check your symptoms and get advice on whether you need medical attention or self-care at home.</p>
+      <button class="feature-btn" onclick="window.location.href='/symptom-checker'">Check Now</button>
+    </section>
+  </div>
+
+  <!-- Feature Row 5 (Online Booking) -->
+  <div class="feature-row" id="online-booking">
+    <section class="feature">
+      <h2>Book Appointments Online</h2>
+      <p>Quickly schedule appointments with healthcare professionals and get reminders for your visits.</p>
+      <button class="feature-btn" onclick="window.location.href='/online-booking'">Book Now</button>
+    </section>
+    <section class="feature-img">
+      <img src="/images/online-booking.jpg" alt="Online Booking" class="feature-img-card">
+    </section>
+  </div>
+
+  <!-- Feature Row 6 (Community Education) -->
+  <div class="feature-row reverse" id="peer-education">
+    <section class="feature-img">
+      <img src="/images/peer-education.png" alt="Community Education" class="feature-img-card">
+    </section>
+    <section class="feature">
+      <h2>Community Health Educators</h2>
+      <p>Empower community members to become health educators, sharing critical health knowledge with others.</p>
+      <button class="feature-btn" onclick="window.location.href='/peer-education'">Get Involved</button>
+    </section>
+  </div>
+
+  <!-- Feature Row 7 (User Registration) -->
+  <div class="feature-row" id="user-account">
+    <section class="feature">
+      <h2>Register and Login</h2>
+      <p>Create your account to access personalized health resources, appointments, and community features.</p>
+      <button class="feature-btn" onclick="window.location.href='/user-account'">Sign Up</button>
+    </section>
+  </div>
+</div>
+
 
   <%- include("partials/footer.ejs") %>
