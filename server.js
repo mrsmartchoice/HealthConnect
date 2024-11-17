@@ -7,7 +7,7 @@ import diseasePrevention from './routes/diseasePrevent.js';
 import peerEducationRoutes from './routes/peerEducation.js';
 import symptonCheckerRoutes from './routes/symptonChecker.js';
 import userAccountRoutes from './routes/userAccount.js';
-import onlineBookingRoutes from './routes/onlineBooking.js';
+import appointmentRoutes from './routes/appointments.js';
 
 const app = express();
 const PORT = 3000;
@@ -22,7 +22,8 @@ app.use('/peer-education', peerEducationRoutes);
 app.use('/disease-prevention', diseasePrevention);
 app.use('/sympton-checker', symptonCheckerRoutes);
 app.use('/user-account', userAccountRoutes);
-app.use('/online-', onlineBookingRoutes);
+app.use('/appointments', appointmentRoutes);
+
 
 // Home route
 app.get('/', (req, res) => {

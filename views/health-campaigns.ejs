@@ -1,0 +1,18 @@
+<% - include("partials/footer.ejs") %>
+<main>
+    <div class="campaigns-container">
+        <% healthCampaigns.forEach(campaign=> { %>
+            <div class="campaign-card">
+                <h3>
+                    <%= campaign.title %>
+                </h3>
+                <p>
+                    <%= campaign.description %>
+                </p>
+                <small>From <%= campaign.startDate %> to <%= campaign.endDate %></small>
+            </div>
+            <% }); %>
+    </div>
+</main>
+
+<% - include("partials/footer.ejs") %>

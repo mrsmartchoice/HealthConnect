@@ -1,6 +1,25 @@
 <% - include("partials/header.ejs") %>
 
-
+<main>
+    <div class="educators-container">
+        <% peerEducators.forEach(educator=> { %>
+            <div class="educator-card">
+                <h3>
+                    <%= educator.name %>
+                </h3>
+                <p><strong>Expertise:</strong>
+                    <%= educator.expertise %>
+                </p>
+                <p><strong>Contact:</strong>
+                    <%= educator.contact %>
+                </p>
+                <p><strong>Location:</strong>
+                    <%= educator.location %>
+                </p>
+            </div>
+            <% }); %>
+    </div>
+</main>
 
 
 

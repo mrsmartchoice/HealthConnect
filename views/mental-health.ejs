@@ -1,7 +1,24 @@
 <% - include("partials/header.ejs") %>
 
 
-
-
-
-    <% - include("partials/footer.ejs") %>
+<main>
+    <div class="mental-health-container">
+        <% mentalHealthResources.forEach(resource=> { %>
+            <div class="resource-card">
+                <h3>
+                    <%= resource.name %>
+                </h3>
+                <p>
+                    <%= resource.description %>
+                </p>
+                <p><strong>Contact:</strong>
+                    <%= resource.contact %>
+                </p>
+                <% if(resource.anonymousSupport) { %>
+                    <p><em>Anonymous Support Available</em></p>
+                    <% } %>
+            </div>
+            <% }); %>
+    </div>
+</main>
+   <% - include("partials/footer.ejs") %>

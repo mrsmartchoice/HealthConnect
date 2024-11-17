@@ -65,7 +65,7 @@ button{
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
-  text-align: ;
+  text-align: center;
 }
 
 .register-btn:hover {
