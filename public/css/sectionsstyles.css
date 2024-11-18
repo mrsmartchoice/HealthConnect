@@ -1,0 +1,209 @@
+/* #comment: Added styles for the search bar and message */
+.search-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+#search-input {
+  width: 90%;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#search-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#search-message {
+  margin-top: 10px;
+  color: #ff0000;
+  font-size: 14px;
+  font-style: italic;
+}
+
+
+/* Container for the resources */
+.resources-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between cards */
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Individual resource card */
+.resource-card , .symtoms-card {
+    background-color: white;
+    /* padding: 15px;
+    margin: 10px; */
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: calc(33.333% - 20px); /* 3 items per row with gap */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.resource-card:hover ,.symtoms-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.resource-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #ddd;
+}
+
+.resource-card h3 , .symtoms-card h3 {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.resource-card p , .symtoms-card p {
+    padding: 0 10px 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* DISEASE PREVENT */
+
+.tips-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.tip-card {
+    background-color: #eef2f3;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+}
+
+.tip-card h3 {
+    color: #008CBA;
+}
+
+/* MENTAL HEALTH */
+.mental-health-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* HEALTH CAMPAIGNS */
+.campaigns-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.campaign-card {
+    background-color: #eef2f3;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+}
+
+/* ALERT CONTAINER */
+
+.alerts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.alert-card {
+    background-color: #f9f1f1;
+    border: 1px solid #ff7675;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+}
+
+.alert-card h3 {
+    color: #d63031;
+}
+/* 
+
+BOOK APPOINTMENT */
+
+.theform {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+.appointments-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.appointment-card {
+    background-color: #fff0f0;
+    border: 1px solid #008CBA;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+}
+
+
+
+/* EDUCATION */
+
+.educators-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.educator-card {
+    background-color: #f0f8ff;
+    border: 1px solid #5a9;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 250px;
+    text-align: center;
+}
+
+.educator-card h3 {
+    color: #0277bd;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .resource-card {
+        width: calc(50% - 20px); /* 2 items per row */
+    }
+}

@@ -1,5 +1,5 @@
 import express from 'express';
-import healthCampaigns from '../data/healthCampaignsData'; // Ensure this path is correct
+import healthCampaigns from '../data/healthCampaignsData.js'; // Ensure this path is correct
 
 const router = express.Router();
 
