@@ -1,21 +1,26 @@
-
 <%- include("partials/header.ejs") %>
 
 <div class="main-body">
     <!-- Form section -->
+    <% if (message) { %>
+      <p class="form-message"><%= message %></p>
+    <% } %>
+
     <div class="form-container">
       <span class="close-icon"><ion-icon name="close"></ion-icon></span>
-      <div class="form-box login">
+
+      <!-- Login Form -->
+      <div class="form-box login <%= isLogin ? '' : 'hidden' %>">
         <h2>Login</h2>
-        <form action="#">
+        <form action="/user-account/login" method="POST">
           <div class="input-box">
             <span class="icon"> <ion-icon name="mail"></ion-icon></span>
-            <input type="email" required />
+            <input type="email" name="email" required />
             <label>Email</label>
           </div>
           <div class="input-box">
             <span class="icon"> <ion-icon name="lock-closed"></ion-icon></span>
-            <input type="password" required />
+            <input type="password" name="password" required />
             <label>Password</label>
           </div>
           <div class="forget-remember">
@@ -31,22 +36,23 @@
         </form>
       </div>
 
-      <div class="form-box register">
+      <!-- Registration Form -->
+      <div class="form-box register <%= isLogin ? 'hidden' : '' %>">
         <h2>Registration</h2>
-        <form action="#">
+        <form action="/user-account/register" method="POST">
           <div class="input-box">
             <span class="icon"> <ion-icon name="person"></ion-icon></span>
-            <input type="text" required />
+            <input type="text" name="username" required />
             <label>Username</label>
           </div>
           <div class="input-box">
             <span class="icon"> <ion-icon name="mail"></ion-icon></span>
-            <input type="email" required />
+            <input type="email" name="email" required />
             <label>Email</label>
           </div>
           <div class="input-box">
             <span class="icon"> <ion-icon name="lock-closed"></ion-icon></span>
-            <input type="password" required />
+            <input type="password" name="password" required />
             <label>Password</label>
           </div>
           <div class="forget-remember">
@@ -55,11 +61,32 @@
           <button class="btn" type="submit">Register</button>
           <div class="reg-login">
             <p>
-              Already have an account? <a href="#" class="log-link">login</a>
+              Already have an account? <a href="#" class="log-link">Login</a>
             </p>
           </div>
         </form>
       </div>
     </div>
-  </div>
-    <%- include("partials/footer.ejs") %>
+</div>
+
+<!-- <script>
+  // Toggle forms
+  const loginForm = document.querySelector(".form-box.login");
+  const registerForm = document.querySelector(".form-box.register");
+  const regLink = document.querySelector(".reg-link");
+  const logLink = document.querySelector(".log-link");
+
+  regLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    loginForm.classList.add("hidden");
+    registerForm.classList.remove("hidden");
+  });
+
+  logLink.addEventListener("click", (e) => {
+    e.preventDefault();
+    registerForm.classList.add("hidden");
+    loginForm.classList.remove("hidden");
+  });
+</script> -->
+
+<%- include("partials/footer.ejs") %>

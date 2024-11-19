@@ -9,11 +9,14 @@
                     <%= resource.name %>
                 </h3>
                 <p>
-                    <%= resource.description %>
+                    <%= resource.services %>
                 </p>
-                <p><strong>Contact:</strong>
+                <h4><strong>Contact:</strong>
                     <%= resource.contact %>
-                </p>
+                </h4>
+                <h4><strong>Location:</strong>
+                    <%= resource.location %>
+                </h4>
                 <% if(resource.anonymousSupport) { %>
                     <p><em>Anonymous Support Available</em></p>
                     <% } %>

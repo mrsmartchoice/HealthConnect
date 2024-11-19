@@ -1,6 +1,9 @@
 <%- include("partials/header.ejs") %>
 
-    <h1>Book an Appointment</h1>
+
+
+<div class="the-appointment">
+    <!-- <h1>Book an Appointment</h1> -->
 <main>
     <form class="theform" action="/appointments/book" method="POST">
         <label for="name">Name:</label>
@@ -18,5 +21,5 @@
         <button type="submit">Book Appointment</button>
     </form>
 </main>
-
+</div>
 <%- include("partials/footer.ejs") %>

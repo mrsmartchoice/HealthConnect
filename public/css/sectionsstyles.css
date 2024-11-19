@@ -1,12 +1,17 @@
 /* #comment: Added styles for the search bar and message */
+.smyptom-div{
+    margin-top: 100px;
+}
 .search-container {
-  margin: 20px 0;
+  margin: 20px auto;
   text-align: center;
+  width: 50%;
+  
 }
 
 #search-input {
-  width: 90%;
-  padding: 50px;
+  width: 100%;
+  padding: 10px 100px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
@@ -64,12 +69,14 @@
     font-size: 18px;
     font-weight: bold;
     color: #333;
+    text-align: center;
 }
 
 .resource-card p , .symtoms-card p {
     padding: 0 10px 10px;
     font-size: 14px;
     color: #555;
+    text-align: center;
 }
 
 
@@ -149,13 +156,94 @@
 
 BOOK APPOINTMENT */
 
+/* Center the entire appointment form */
+.the-appointment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f4f8; /* Light background for contrast */
+    padding: 20px;
+}
+
+/* Heading styles */
+.the-appointment h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Form container styling */
 .theform {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
-    gap: 1rem;
+    gap: 15px;
 }
+
+/* Label styling */
+.theform label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 5px;
+}
+
+/* Input fields styling */
+.theform input {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #dcdde1;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.theform input:focus {
+    border-color: #3498db; /* Blue highlight on focus */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+/* Button styling */
+.theform button {
+    font-size: 1rem;
+    padding: 12px;
+    background-color: #2ecc71; /* Green color */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.theform button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+    transform: scale(1.02);
+}
+
+.theform button:active {
+    transform: scale(0.98);
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .theform {
+        padding: 20px;
+    }
+
+    .the-appointment h1 {
+        font-size: 1.8rem;
+    }
+}
+
 
 .appointments-container {
     display: flex;
@@ -191,10 +279,16 @@ BOOK APPOINTMENT */
     border: 1px solid #5a9;
     border-radius: 8px;
     padding: 1rem;
-    width: 250px;
+    /* width: 250px; */
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
 }
 
+.educator-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
 .educator-card h3 {
     color: #0277bd;
 }

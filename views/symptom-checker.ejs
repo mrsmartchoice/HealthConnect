@@ -1,13 +1,14 @@
 <%- include("partials/header.ejs") %>
+<div class="smyptom-div">
 <h1>Symptoms Checker</h1>
-  <p>Find information about common symptoms and recommendations.</p>
-
-<div class="search-container">
-  <input
-    type="text" id="search-input" placeholder="Enter a symptoms (e.g., headache)"/>
+<p>Find information about common symptoms and recommendations.</p>
 </div>
 
-<div class="container">
+<main class="container">
+  <div class="search-container">
+    <input
+      type="text" id="search-input" placeholder="Enter a symptoms (e.g., headache)"/>
+  </div>
   
   <p id="search-message" style="display: none;">No results found.</p>
     <div class="resources-container">
@@ -33,7 +34,7 @@
               <p>No health symptomss available at this time.</p>
               <% } %>
     </div>
-</div>
+  </main>
 
 
 

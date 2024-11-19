@@ -1,77 +1,178 @@
 const healthResources = [
     {
-        title: "Clinic A",
-        description: "A trusted clinic.",
-        imageUrl: "/images/clinic-a.jpg",
-        address: "Nigerian Town, Main Street",
-        state: "Kano"
-    },
-    {
-        title: "Pharmacy B",
-        description: "Reliable pharmacy services.",
-        imageUrl: "/images/pharmacy-b.jpg",
-        address: "GAD, Road MD Rega",
-        state: "Sokoto"
-    },
-    {
-        title: "Telemedicine C",
-        description: "Consult doctors online.",
-        imageUrl: "/images/telemedicine-c.jpg",
-        address: "Mabera Campus",
-        state: "Sokoto"
-    },
-    { title: "Clinic D", description: "Affordable healthcare in your area.", imageUrl: "/images/clinic-d.jpg" },
-    { title: "Pharmacy E", description: "Medicine and wellness supplies.", imageUrl: "/images/pharmacy-e.jpg" },
-    { title: "Telemedicine F", description: "Telehealth services for your convenience.", imageUrl: "/images/telemedicine-f.jpg" },
-    { title: "Clinic G", description: "Well-known medical center for general health.", imageUrl: "/images/clinic-g.jpg" },
-    { title: "Pharmacy H", description: "Pharmacy offering home delivery services.", imageUrl: "/images/pharmacy-h.jpg" },
-    { title: "Telemedicine I", description: "24/7 online consultations with health professionals.", imageUrl: "/images/telemedicine-i.jpg" },
-    { title: "Clinic J", description: "Specialized in urgent care and emergency services.", imageUrl: "/images/clinic-j.jpg" },
-    { title: "Pharmacy K", description: "Pharmacy chain offering prescriptions and consultations.", imageUrl: "/images/pharmacy-k.jpg" },
-    { title: "Telemedicine L", description: "Consult a doctor from the comfort of your home.", imageUrl: "/images/telemedicine-l.jpg" },
-    { title: "Clinic M", description: "Full-service medical center for families.", imageUrl: "/images/clinic-m.jpg" },
-    { title: "Pharmacy N", description: "Trusted pharmacy with a wide range of medicines.", imageUrl: "/images/pharmacy-n.jpg" },
-    { title: "Telemedicine O", description: "Your online doctor, anytime, anywhere.", imageUrl: "/images/telemedicine-o.jpg" },
-    { title: "Clinic P", description: "Primary care clinic offering health screenings.", imageUrl: "/images/clinic-p.jpg" },
-    { title: "Pharmacy Q", description: "Pharmacy with free home delivery of prescriptions.", imageUrl: "/images/pharmacy-q.jpg" },
-    { title: "Telemedicine R", description: "Remote health consultations with specialists.", imageUrl: "/images/telemedicine-r.jpg" },
-    { title: "Clinic S", description: "Clinic specializing in women's health.", imageUrl: "/images/clinic-s.jpg" },
-    { title: "Pharmacy T", description: "Local pharmacy for over-the-counter and prescription medications.", imageUrl: "/images/pharmacy-t.jpg" },
-    { title: "Telemedicine U", description: "Virtual care services with licensed physicians.", imageUrl: "/images/telemedicine-u.jpg" },
-    { title: "Clinic V", description: "Specialized in pediatric care.", imageUrl: "/images/clinic-v.jpg" },
-    { title: "Pharmacy W", description: "Pharmacy with expert advice on wellness and supplements.", imageUrl: "/images/pharmacy-w.jpg" },
-    { title: "Telemedicine X", description: "Get online health consultations from expert doctors.", imageUrl: "/images/telemedicine-x.jpg" },
-    { title: "Clinic Y", description: "Renowned clinic for holistic health services.", imageUrl: "/images/clinic-y.jpg" },
-    { title: "Pharmacy Z", description: "Pharmacy with focus on natural remedies and prescriptions.", imageUrl: "/images/pharmacy-z.jpg" },
-    { title: "Telemedicine AA", description: "Online consultations for mental health support.", imageUrl: "/images/telemedicine-aa.jpg" },
-    { title: "Clinic AB", description: "General health clinic offering lab tests and treatment.", imageUrl: "/images/clinic-ab.jpg" },
-    { title: "Pharmacy AC", description: "Community pharmacy offering personalized care.", imageUrl: "/images/pharmacy-ac.jpg" },
-    { title: "Telemedicine AD", description: "Virtual healthcare for various medical conditions.", imageUrl: "/images/telemedicine-ad.jpg" },
-    { title: "Clinic AE", description: "Health clinic focused on preventive care.", imageUrl: "/images/clinic-ae.jpg" },
-    { title: "Pharmacy AF", description: "Providing affordable medications with a personal touch.", imageUrl: "/images/pharmacy-af.jpg" },
-    { title: "Telemedicine AG", description: "Quick consultations for common health issues.", imageUrl: "/images/telemedicine-ag.jpg" },
-    { title: "Clinic AH", description: "Dedicated to providing comprehensive healthcare services.", imageUrl: "/images/clinic-ah.jpg" },
-    { title: "Pharmacy AI", description: "Pharmacy with medication counseling and health advice.", imageUrl: "/images/pharmacy-ai.jpg" },
-    { title: "Telemedicine AJ", description: "Online doctor visits for your convenience.", imageUrl: "/images/telemedicine-aj.jpg" },
-    { title: "Clinic AK", description: "Advanced medical center for surgery and recovery.", imageUrl: "/images/clinic-ak.jpg" },
-    { title: "Pharmacy AL", description: "Pharmacy offering medical supplies and health consultations.", imageUrl: "/images/pharmacy-al.jpg" },
-    { title: "Telemedicine AM", description: "Telehealth services focused on long-term care.", imageUrl: "/images/telemedicine-am.jpg" },
-    { title: "Clinic AN", description: "Leading medical facility specializing in heart care.", imageUrl: "/images/clinic-an.jpg" },
-    { title: "Pharmacy AO", description: "Reliable pharmacy with expert care for chronic conditions.", imageUrl: "/images/pharmacy-ao.jpg" },
-    { title: "Telemedicine AP", description: "Remote consultations with healthcare professionals.", imageUrl: "/images/telemedicine-ap.jpg" },
-    { title: "Clinic AQ", description: "Health center providing primary care and wellness programs.", imageUrl: "/images/clinic-aq.jpg" },
-    { title: "Pharmacy AR", description: "Pharmacy that offers customized health solutions.", imageUrl: "/images/pharmacy-ar.jpg" },
-    { title: "Telemedicine AS", description: "Online consultations with medical professionals.", imageUrl: "/images/telemedicine-as.jpg" },
-    { title: "Clinic AT", description: "Comprehensive clinic for routine check-ups and diagnostics.", imageUrl: "/images/clinic-at.jpg" },
-    { title: "Pharmacy AU", description: "Pharmacy offering a wide range of health products and advice.", imageUrl: "/images/pharmacy-au.jpg" },
-    { title: "Telemedicine AV", description: "Virtual visits with qualified healthcare professionals.", imageUrl: "/images/telemedicine-av.jpg" },
-    { title: "Clinic AW", description: "Specialty clinic for elderly care and geriatric health.", imageUrl: "/images/clinic-aw.jpg" },
-    { title: "Pharmacy AX", description: "Pharmacy with home delivery services for prescriptions.", imageUrl: "/images/pharmacy-ax.jpg" },
-    { title: "Telemedicine AY", description: "Online consultation services for various specialties.", imageUrl: "/images/telemedicine-ay.jpg" },
-    { title: "Clinic AZ", description: "Health clinic offering general medical and dental care.", imageUrl: "/images/clinic-az.jpg" },
-    { title: "Pharmacy BA", description: "Pharmacy with a wide range of health supplements.", imageUrl: "/images/pharmacy-ba.jpg" },
-    { title: "Telemedicine BB", description: "Remote health consultations with expert doctors.", imageUrl: "/images/telemedicine-bb.jpg" },
-    // Add more resources...
+        name: "Usman Dan Fodio University Teaching Hospital",
+        address: "Garba Nadama Road, Sokoto, Sokoto State",
+        phone: ["0703 650 5608", "060-239605-10", "060-230254060-232546"],
+        description: "UDUTH offers medical training & services on surgery, neurosurgery, obstetrics, gynaecology, paediatrics, ophthalmology, dental, maxillofacial, anaesthesia, radiology, physiotherapy, pharmacy, radiotherapy, psychiatry, pathology & orthopaedic"
+      },
+      {
+        name: "Divine Clinic",
+        address: "Opposite As-Villa Fantastic Studio, Angwan-Rogo, Sokoto State",
+        phone: ["0803 604 3991"],
+        description: "Divine Clinic is a private health facility with particular emphasis on women and reproductive health."
+      },
+      {
+        name: "Hamdala Medical Centre",
+        address: "Emir Yahaya Road, Sokoto, Sokoto State Nigeria",
+        phone: ["08033934526"],
+        description: "Hamdala Medical Centre specializes in medical research, diagnosis and general treatment services."
+      },
+      {
+        name: "Karaye Hospital",
+        address: "Emir Yahaya Road, Sokoto, Sokoto State",
+        phone: ["08051337865", "08066024503"],
+        description: "Karaye Hospital offers medical services on diagnosis, research, and treatment."
+      },
+      {
+        name: "Khadijat Dental Clinic",
+        address: "No 7 Dan Kano Plaza Arkilla, Nasarawa Area, Sokoto",
+        phone: ["0810 737 8637", "0701 076 0119"],
+        description: "Khadijat Dental Clinic provides adequate and affordable dental services to maintain good oral health."
+      },
+      {
+        name: "Murtala Muhammed Specialist Hospital",
+        address: "131, Sultan Abubakar Road, Sokoto, Sokoto State Nigeria",
+        phone: ["0807 179 2222"],
+        description: "Murtala Muhammed Specialist Hospital provides medical services on paediatrics, obstetrics, gynaecology, and surgery."
+      },
+      {
+        name: "Sahel Specialist Hospital",
+        address: "65, Ahmadu Bello Way, Sokoto, Sokoto State Nigeria",
+        phone: ["08035776501", "07066696025"],
+        description: "Sahel Specialist Hospital offers paediatric, radiotherapy, psychiatry, pathology, orthopaedic, and surgical care services."
+      },
+      {
+        name: "Saraki Specialist Hospital",
+        address: "Ali Akilu Road, Sokoto, Sokoto State Nigeria",
+        phone: ["08166830907"],
+        description: "Saraki Specialist Hospital provides medical services in diagnosis, treatment, and general healthcare."
+      },
+      {
+        name: "Sokoto Clinic Limited",
+        address: "46, Abdullahi Fodio Road, Sokoto",
+        phone: ["0701 076 0119", "060-231012"],
+        description: "Sokoto Clinic Limited is a professional healthcare center offering sound medical services in Sokoto State."
+      },
+      {
+        name: "Federal Neuro-Psychiatric Hospital, Sokoto",
+        address: "Kware, Sokoto State, Nigeria",
+        phone: [],
+        description: "A hospital for mental medical issues and the mentally challenged, known as one of the apex centers for Psychiatry in Nigeria."
+      },
+      {
+        name: "City Hospital",
+        address: "15 Airport Road, Sokoto, Sokoto State",
+        phone: ["07032234567", "08076543210"],
+        description: "City Hospital provides high-quality general medical services including emergency care and outpatient consultations."
+      },
+      {
+        name: "Shehu Specialist Clinic",
+        address: "35 Waziri Abbas Road, Sokoto State",
+        phone: ["08121234567"],
+        description: "Specializes in the treatment of chronic illnesses, diagnostic services, and wellness checks."
+      },
+      {
+        name: "Sunshine Maternity and Childcare Clinic",
+        address: "23 Gawon Nama Road, Sokoto",
+        phone: ["08021234567"],
+        description: "Provides comprehensive maternal and child healthcare services including prenatal care and immunizations."
+      },
+      {
+        name: "Prime Care Hospital",
+        address: "Plot 12, Eastern Bypass, Sokoto State",
+        phone: ["07061234567"],
+        description: "Focuses on internal medicine, surgery, and diagnostic laboratory services."
+      },
+      {
+        name: "Golden Age Geriatric Clinic",
+        address: "14 Ahmadu Bello Way, Sokoto",
+        phone: ["08181234567"],
+        description: "Specializes in healthcare for elderly patients, including management of age-related conditions."
+      },
+      {
+        name: "Hope Fertility Center",
+        address: "Plot 8 Sultan Bello Street, Sokoto",
+        phone: ["08033234567"],
+        description: "Offers fertility treatments and reproductive health services for couples."
+      },
+      {
+        name: "Harmony Eye Clinic",
+        address: "22 Sultan Road, Sokoto",
+        phone: ["07041234567"],
+        description: "Provides eye care services, including cataract surgery, glasses prescription, and treatment of glaucoma."
+      },
+      {
+        name: "Unity Orthopedic Hospital",
+        address: "41 Kasarawa Road, Sokoto",
+        phone: ["08162234567"],
+        description: "Specializes in orthopedic surgery, physiotherapy, and musculoskeletal care."
+      },
+      {
+        name: "LifeLine Emergency Center",
+        address: "10 Gidan Dare Road, Sokoto",
+        phone: ["07022234567"],
+        description: "Provides emergency medical services 24/7 with modern equipment and trained staff."
+      },
+      {
+        name: "Faith Clinic and Diagnostic Center",
+        address: "19 Kalambaina Road, Sokoto",
+        phone: ["08173234567"],
+        description: "Offers a range of diagnostic tests and general healthcare services."
+      },
+      {
+        name: "Zamfara Road Health Post",
+        address: "3 Zamfara Road, Sokoto",
+        phone: ["08055234567"],
+        description: "A government-run clinic providing affordable basic medical services to the community."
+      },
+      {
+        name: "Wellness Check Hospital",
+        address: "8 Birnin Kebbi Road, Sokoto",
+        phone: ["07011234567"],
+        description: "Focuses on preventive healthcare, health education, and wellness programs."
+      },
+      {
+        name: "Elite Heart Center",
+        address: "Plot 5 Waziri Abbas Road, Sokoto",
+        phone: ["08091234567"],
+        description: "Specializes in cardiology services, including diagnosis and treatment of heart diseases."
+      },
+      {
+        name: "Safe Motherhood Clinic",
+        address: "47 Shehu Shagari Way, Sokoto",
+        phone: ["08193234567"],
+        description: "Provides safe delivery services, prenatal, and postnatal care for mothers and newborns."
+      },
+      {
+        name: "Bliss Dental Hospital",
+        address: "29 Kasarawa Road, Sokoto",
+        phone: ["07083234567"],
+        description: "Offers advanced dental treatments, cosmetic dentistry, and oral surgeries."
+      },
+      {
+        name: "Sheikh Abubakar Medical Center",
+        address: "6 Waziri Abbas Road, Sokoto",
+        phone: ["08033234567"],
+        description: "Provides comprehensive medical services with an emphasis on patient-centered care."
+      },
+      {
+        name: "Pediatric Care Clinic",
+        address: "12 Emir Yahaya Road, Sokoto",
+        phone: ["07073234567"],
+        description: "Specializes in pediatric care, immunizations, and treatment of childhood illnesses."
+      },
+      {
+        name: "Radiance Diagnostic Hospital",
+        address: "16 Sultan Bello Road, Sokoto",
+        phone: ["08103234567"],
+        description: "Focuses on advanced diagnostic services, including imaging and laboratory tests."
+      },
+      {
+        name: "Grace Community Health Center",
+        address: "4 Gidan Dare Road, Sokoto",
+        phone: ["07053234567"],
+        description: "A community-based clinic offering affordable healthcare to underserved populations."
+      }
 ];
 
 

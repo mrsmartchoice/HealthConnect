@@ -3,6 +3,10 @@
 
 <!-- Search Bar Section -->
 <!-- #comment: Added a search bar feature below the header -->
+<div class="smyptom-div">
+<h1>Health Resources</h1>
+<h2>List of Clinics, Pharmacies, and Telemedicine Options</h2>
+</div>
 <div class="search-container">
   <input
     type="text"
@@ -12,26 +16,25 @@
 </div>
 
   <div class="container">
-    <h2>List of Clinics, Pharmacies, and Telemedicine Options</h2>
-
   <p id="search-message" style="display: none;">No results found.</p>
     <div class="resources-container">
       <% if (healthResources.length> 0) { %>
         <% healthResources.forEach(resource=> { %>
           <div class="resource-card">
-            <img src="<%= resource.imageUrl %>" alt="<%= resource.title %>">
             <h3>
-              <%= resource.title %>
+              <%= resource.name %>
             </h3>
+            <h3>
+              <%= resource.address %>
+            </h3>
+            <h3>
+              <%= resource.phone %>
+            </h3>
+
             <p>
               <%= resource.description %>
             </p>
-            <p><strong>Address:</strong>
-              <%= resource.address || 'Not available' %>
-            </p>
-            <p><strong>State:</strong>
-              <%= resource.state || 'Not available' %>
-            </p>
+
           </div>
           <% }); %>
             <% } else { %>
