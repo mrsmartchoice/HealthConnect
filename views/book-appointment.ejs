@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+
+
+
+<div class="the-appointment">
+    <!-- <h1>Book an Appointment</h1> -->
+<main>
+    <form class="theform" action="/appointments/book" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <label for="doctor">Doctor/Clinic:</label>
+        <input type="text" id="doctor" name="doctor" required>
+
+        <button type="submit">Book Appointment</button>
+    </form>
+</main>
+</div>
+<%- include("partials/footer.ejs") %>

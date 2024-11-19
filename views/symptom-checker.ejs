@@ -1,0 +1,42 @@
+<%- include("partials/header.ejs") %>
+<div class="smyptom-div">
+<h1>Symptoms Checker</h1>
+<p>Find information about common symptoms and recommendations.</p>
+</div>
+
+<main class="container">
+  <div class="search-container">
+    <input
+      type="text" id="search-input" placeholder="Enter a symptoms (e.g., headache)"/>
+  </div>
+  
+  <p id="search-message" style="display: none;">No results found.</p>
+    <div class="resources-container">
+      
+      <% if (symptomsData.length> 0) { %>
+        <% symptomsData.forEach(symptoms=> { %>
+          <div class="symtoms-card">
+            <h3 id="symptom-1">
+              <%= symptoms.symptom %>
+            </h3>
+            <p class="symptom-2">
+              <%= symptoms.possibleConditions %>
+            </p>
+            <h3 class="symptom-1">
+              <%= symptoms.severity || 'Not available' %>
+            </h3>
+            <p class="symptom-2">
+              <%= symptoms.recommendation || 'Not available' %>
+            </p>
+          </div>
+          <% }); %>
+            <% } else { %>
+              <p>No health symptomss available at this time.</p>
+              <% } %>
+    </div>
+  </main>
+
+
+
+
+    <%- include("partials/footer.ejs") %>

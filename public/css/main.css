@@ -21,6 +21,7 @@
 
 .herotext, .heroimage, .search-section, .advanced-features, .feature {
   padding: 20px;
+  text-align: center;
 }
 
 h1, h2 {
@@ -30,12 +31,10 @@ h1, h2 {
 
 p {
   color: #555;
-  text-align: center
-  ;
-}
-button{
   text-align: center;
+  font-size: 1.5rem;
 }
+
 
 /* Hero Section */
 .herotext , .heroimage{
@@ -65,7 +64,7 @@ button{
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
-  text-align: ;
+  border-radius: 30px;
 }
 
 .register-btn:hover {

@@ -1,10 +1,47 @@
-
 <%- include("partials/header.ejs") %>
 
 
-<h2>Health Resources</h2>
-<p>Here you’ll find a list of clinics, pharmacies, and telemedicine options.</p>
+<!-- Search Bar Section -->
+<!-- #comment: Added a search bar feature below the header -->
+<div class="smyptom-div">
+<h1>Health Resources</h1>
+<h2>List of Clinics, Pharmacies, and Telemedicine Options</h2>
+</div>
+<div class="search-container">
+  <input
+    type="text"
+    id="search-input"
+    placeholder="Search health resources by title, address, or state..."
+  />
+</div>
 
+  <div class="container">
+  <p id="search-message" style="display: none;">No results found.</p>
+    <div class="resources-container">
+      <% if (healthResources.length> 0) { %>
+        <% healthResources.forEach(resource=> { %>
+          <div class="resource-card">
+            <h3>
+              <%= resource.name %>
+            </h3>
+            <h3>
+              <%= resource.address %>
+            </h3>
+            <h3>
+              <%= resource.phone %>
+            </h3>
 
+            <p>
+              <%= resource.description %>
+            </p>
 
-<%- include("partials/footer.ejs") %>
+          </div>
+          <% }); %>
+            <% } else { %>
+              <p>No health resources available at this time.</p>
+              <% } %>
+    </div>
+  </div>
+
+        
+          <%- include("partials/footer.ejs") %>

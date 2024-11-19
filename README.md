@@ -1,4 +1,5 @@
 # HealthConnect
+
 # 🩺 Community Health Platform
 
 Welcome to the **Community Health Platform** 🌍—a web application designed to enhance healthcare access, disease prevention, mental health support, and more in underserved areas.
@@ -6,6 +7,7 @@ Welcome to the **Community Health Platform** 🌍—a web application designed t
 ---
 
 ## 🌟 Project Overview
+
 This platform is created as part of the **3MTT Hackathon** to provide essential health resources to communities. Our platform covers:
 
 - **Health Resources**: Clinics, pharmacies, and telemedicine options 📍
@@ -21,6 +23,7 @@ This platform is created as part of the **3MTT Hackathon** to provide essential 
 ---
 
 ## 🛠️ Tech Stack
+
 Our tech stack combines frontend and backend technologies for a seamless experience:
 
 - **Frontend**: HTML, CSS, JavaScript (Boostrap)
@@ -30,6 +33,7 @@ Our tech stack combines frontend and backend technologies for a seamless experie
 ---
 
 ## 🚀 Features
+
 Each feature of this platform is designed to promote accessible healthcare and community involvement:
 
 1. **User Authentication**: Register and login functionality for personalized user experience 🔑
@@ -43,11 +47,11 @@ Each feature of this platform is designed to promote accessible healthcare and c
 
 ## 👥 Team Members & Roles
 
-| Name                | Role                     | Contribution               |
-|---------------------|--------------------------|-----------------------------|
-| **Ahmad Abubakar Dandare**     | Developer                | Implementing front and backend functionality |
-| **Juliet IJeoma Joseph** | Product Manager        | Defining project requirements and strategy |
-| **Benidict Chika** | UI/UX Designer          | Creating user-friendly designs and layouts |
+| Name                       | Role            | Contribution                                 |
+| -------------------------- | --------------- | -------------------------------------------- |
+| **Ahmad Abubakar Dandare** | Developer       | Implementing front and backend functionality |
+| **Juliet IJeoma Joseph**   | Product Manager | Defining project requirements and strategy   |
+| **Benidict Chika**         | UI/UX Designer  | Creating user-friendly designs and layouts   |
 
 ---
 
@@ -61,6 +65,7 @@ Each feature of this platform is designed to promote accessible healthcare and c
 ---
 
 ## 🚩 Future Enhancements
+
 We plan to add more functionalities, including:
 
 - **Database Integration**: For more scalable data management
@@ -70,7 +75,8 @@ We plan to add more functionalities, including:
 ---
 
 ## 📸 Screenshots
-![Home Page](public/images/healthConnect.png)
+
+![Home Page](public/images/health-connect.png)
 ![Health Resources](link_to_health_resources_screenshot.png)
 
 ---
@@ -83,9 +89,11 @@ We plan to add more functionalities, including:
 ---
 
 ## 💡 Inspiration & Acknowledgments
+
 This project was inspired by our passion to improve healthcare access and our shared goal of empowering communities through digital health solutions.
 
 ---
 
 ## 📜 License
+
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.

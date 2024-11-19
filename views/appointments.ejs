@@ -1,0 +1,27 @@
+<%- include("partials/header.ejs") %>
+<div class="the-appointment">
+    <h1>Book an Appointment</h1>
+    <main>
+        <form class="theform" action="/appointments/book" method="POST">
+            <!-- Name field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <!-- Date field -->
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <!-- Time field -->
+            <label for="time">Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <!-- Doctor/Clinic field -->
+            <label for="doctor">Doctor/Clinic:</label>
+            <input type="text" id="doctor" name="doctor" placeholder="Specify doctor or clinic" required>
+
+            <!-- Submit button -->
+            <button type="submit">Book Appointment</button>
+        </form>
+    </main>
+</div>
+<%- include("partials/footer.ejs") %>
